@@ -13,6 +13,10 @@
         }
         .chinese{
             font-family: "PingFang SC", "Microsoft Yahei", monospace;
+            /* 字体fallback, 优先用苹方，找不到就用微软雅黑，再找不到就随便一个等宽字体 */
+            /* 字体族不能加引号 */
+            /* 苹方在前雅黑在后，mac用户会优先苹方，pc用户优先雅黑，如果调过来，因为很多mac用户会装雅黑字体，会导致这部分用户显示雅黑，而mac上雅黑显示不如苹方 */
+            /* 界面实际渲染的字体可在chrome工具的Elements-Computed-拖到最下面的Rendered Fonts查看 */
             /* font-family: "Microsoft Yahei", serif; */
             /* font-family: "serif"; */
         }
@@ -23,6 +27,7 @@
             font-weight: normal;
             font-weight: 100;
         }
+        /* @font-face用于自定义字体 */
         @font-face {
             font-family: "IF";
             src: url("./IndieFlower.ttf");

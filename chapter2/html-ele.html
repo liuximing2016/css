@@ -61,15 +61,19 @@
             </p>
             <p>
                 <input type="radio" name="radio1" id="radio1-1" />
+                <!--radio的name属性相同表示是同一组，只能选中一个-->
                 <label >选项一</label>
                 <input type="radio" name="radio1" id="radio1-2" />
                 <label for="radio1-2">选项二</label>
+                <!--label的for属性标识绑定input，选中该label时也能选中绑定的input，如果不加for则选中label不会选中任何input-->
             </p>
             <p>
                 <button type="button">普通按钮</button>
                 <button type="submit">提交按钮一</button>
+                <!--type为submit的button，与type为submit的input含义一样，出现在表单中才有意义-->
                 <input type="submit" value="提交按钮二"/>
                 <button type="reset">重置按钮</button>
+                <!--type为reset的button，也是出现在表单中才有意义-->
             </p>
         </form>
     </section>
