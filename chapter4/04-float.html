@@ -17,12 +17,13 @@
             width:200px;
             height:50px;
         }
+        /* 除overflow外清除浮动的另一种方式 */
         .container2::after{
-            content: 'aaa';
-            clear:both;
-            display: block;
-            visibility: hidden;
-            height:0;
+            content: 'aaa'; /* 可以用空格等代替 */
+            clear:both; /* 清除两侧浮动元素，即不与浮动元素并列 */
+            display: block; /* inline元素有可能到浮动元素的上方，所以要清除浮动 */
+            visibility: hidden; /* 隐藏aaa字样 */
+            height:0; /* 高度设为0，不占空间 */
         }
         
     </style>
