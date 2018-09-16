@@ -8,13 +8,13 @@ body{
 }
 
 .wrapper{
-    background:lighten(@bgColor, 40%);
+    background:lighten(@bgColor, 40%); // lighten表示颜色减轻
 
     .nav{
         font-size: @fontSize;
     }
     .content{
-        font-size: @fontSize + 2px;
+        font-size: @fontSize + 2px; // 计算px带单位
         &:hover{
             background:@bgColor;
         }
